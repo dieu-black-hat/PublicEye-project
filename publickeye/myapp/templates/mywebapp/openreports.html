@@ -1,0 +1,409 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Open Reports</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <link rel="stylesheet" href="{% static 'assets1/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="{% static 'assets1/css/ready.css' %}">
+    <link rel="stylesheet" href="{% static 'assets1/css/demo.css' %}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main-header">
+            <div class="logo-header">
+                <a href="index.html" class="logo">
+                    Dashboard
+                </a>
+                <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button class="topbar-toggler more"><i class="la la-ellipsis-v"></i></button>
+            </div>
+            <nav class="navbar navbar-header navbar-expand-lg">
+                <div class="container-fluid">
+                    <form class="navbar-left navbar-form nav-search mr-md-3" action="">
+                        <div class="input-group">
+                            <input type="text" placeholder="Search ..." class="form-control">
+                            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="la la-search search-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+                        <li class="nav-item dropdown hidden-caret">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="la la-envelope"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown hidden-caret">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="la la-bell"></i>
+                                <span class="notification">3</span>
+                            </a>
+                            <ul class="dropdown-menu notif-box" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <div class="dropdown-title">You have 4 new notifications</div>
+                                </li>
+                                <li>
+                                    <div class="notif-center">
+                                        <a href="#">
+                                            <div class="notif-icon notif-primary"> <i class="la la-user-plus"></i> </div>
+                                            <div class="notif-content">
+                                                <span class="block">
+                                                    New user registered
+                                                </span>
+                                                <span class="time">5 minutes ago</span>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="notif-icon notif-success"> <i class="la la-comment"></i> </div>
+                                            <div class="notif-content">
+                                                <span class="block">
+                                                    Rahmad commented on Admin
+                                                </span>
+                                                <span class="time">12 minutes ago</span>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="notif-img">
+                                                <img src="{% static 'assets1/img/profile2.jpg' %}" alt="Img Profile">
+                                            </div>
+                                            <div class="notif-content">
+                                                <span class="block">
+                                                    Reza sent messages to you
+                                                </span>
+                                                <span class="time">12 minutes ago</span>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="notif-icon notif-danger"> <i class="la la-heart"></i> </div>
+                                            <div class="notif-content">
+                                                <span class="block">
+                                                    Farrah liked Admin
+                                                </span>
+                                                <span class="time">17 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="see-all" href="javascript:void(0);"> <strong>See all notifications</strong> <i class="la la-angle-right"></i> </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false"> <img src="{% static 'assets1/img/profile.jpg' %}" alt="user-img" width="36" class="img-circle"><span>Hizrian</span></a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li>
+                                    <div class="user-box">
+                                        <div class="u-img"><img src="{% static 'assets1/img/profile.jpg' %}" alt="user"></div>
+                                        <div class="u-text">
+                                            <h4>Hizrian</h4>
+                                            <p class="text-muted">hello@themekita.com</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="ti-user"></i> My Profile</a>
+                                <a class="dropdown-item" href="#"><i class="ti-email"></i> Inbox</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="ti-settings"></i> Account Setting</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="fa fa-power-off"></i> Logout</a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="sidebar">
+            <div class="scrollbar-inner sidebar-wrapper">
+                <div class="user">
+                    <div class="photo">
+                        <img src="{% static 'assets1/img/profile.jpg' %}">
+                    </div>
+                    <div class="info">
+                        <a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+                            <span>
+                                Hizrian
+                                <span class="user-level">Administrator</span>
+                            <span class="caret"></span>
+                            </span>
+                        </a>
+                        <div class="clearfix"></div>
+
+                        <div class="collapse in" id="collapseExample" aria-expanded="true" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="#profile">
+                                        <span class="link-collapse">My Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#edit">
+                                        <span class="link-collapse">Edit Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#settings">
+                                        <span class="link-collapse">Settings</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item active">
+                        <a href="index.html">
+                            <i class="la la-dashboard"></i>
+                            <p>Officer Dashboard</p>
+                            <span class="badge badge-count"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="totalreports.html">
+                            <i class="la la-keyboard-o"></i>
+                            <p>Total Reports</p>
+                            <span class="badge badge-count">00</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="openreports.html">
+                            <i class="la la-keyboard-o"></i>
+                            <p>Open Reports</p>
+                            <span class="badge badge-count">00</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="resolvedreports.html">
+                            <i class="la la-keyboard-o"></i>
+                            <p>Resolved Reports</p>
+                            <span class="badge badge-count">00</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="forms.html">
+                            <i class="la la-th"></i>
+                            <p>Update Status</p>
+                            <span class="badge badge-count"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="forms.html">
+                            <i class="la la-th"></i>
+                            <p>Add Progress Notes</p>
+                            <span class="badge badge-count"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="forms.html">
+                            <i class="la la-th"></i>
+                            <p>Most Wanted Persons</p>
+                            <span class="badge badge-count"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tables.html">
+                            <i class="la la-th"></i>
+                            <p>Feedback from Users</p>
+                            <span class="badge badge-count"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="notifications.html">
+                            <i class="la la-bell"></i>
+                            <p>Notifications</p>
+                            <span class="badge badge-success">3</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <div class="content">
+                <div class="container-fluid">
+                    <h4 class="page-title">Open/Pending Reports</h4>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <!-- Changed from col-md-6 to col-md-12 -->
+                            <div class="card">
+                                <form method="POST" enctype="multipart/form-data">
+                                    {% csrf_token %}
+                                    <div class="card-header">
+                                        <div class="card-title">Edit Crime Report for {{ report.name }}</div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label for="email">Email Address</label>
+                                            <input type="email" class="form-control" name="email" value="{{ report.email }}">
+                                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="location">Location Address</label>
+                                            <input type="text" class="form-control" name="location" value="{{ report.location }}">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="victimName">Victim's Full Name</label>
+                                            <input type="text" class="form-control" name="victims" value="{{ report.victims }}">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="crimeType">Crime Type</label>
+                                            <input type="text" class="form-control" name="crime_type" value="{{ report.crime_type }}">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="description">Description</label>
+                                            <textarea class="form-control" name="description" rows="5">{{ report.description }}</textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="status">Status</label>
+                                            <select class="form-control" name="status">
+                                                <option value="open" {% if report.status == 'open' %}selected{% endif %}>Open</option>
+                                                <option value="resolved" {% if report.status == 'resolved' %}selected{% endif %}>Resolved</option>
+                                                <option value="in_progress" {% if report.status == 'in_progress' %}selected{% endif %}>In Progress</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="createdAt">Created At</label>
+                                            <input type="text" class="form-control" value="{{ report.created_at }}" readonly>
+                                        </div>
+                                        {% if report.image %}
+                                        <div class="form-group">
+                                            <label>Image</label>
+                                            <img src="{{ report.image.url }}" alt="Crime Image" class="img-thumbnail">
+                                        </div>
+                                        {% endif %}
+                                    </div>
+
+                                </form>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Feedback on Report: {{ report.name }}</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        {% if feedbacks %}
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Subject</th>
+                                                    <th>Message</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {% for feedback in feedbacks %}
+                                                <tr>
+                                                    <td>{{ feedback.subject }}</td>
+                                                    <td>{{ feedback.message }}</td>
+                                                </tr>
+                                                {% endfor %}
+                                            </tbody>
+                                        </table>
+                                        {% else %}
+                                        <p>No feedback available for this report.</p>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <!-- Display Existing Feedback -->
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="card-title" style="color: rgb(255, 81, 0);">Intelligence Officer Comment Section on Report</div>
+                                    </div>
+                                    <div class="card-body">
+                                        <form method="POST" enctype="multipart/form-data">
+                                            {% csrf_token %}
+                                            <div class="form-group">
+                                                <label for="officer_email">Officer Email Address</label>
+                                                <input type="email" class="form-control" id="officer_email" name="officer_email" placeholder="Officer's Email">
+                                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="victim_names">Victim's Full Names</label>
+                                                <input type="text" class="form-control" id="victim_names" name="victim_names" placeholder="Victim's names">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="suspect_info">Suspect Information</label>
+                                                <input type="text" class="form-control" id="suspect_info" name="suspect_info" placeholder="Suspect Information and address">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="evidence">Evidence</label>
+                                                <input type="text" class="form-control" id="evidence" name="evidence" placeholder="Evidence">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="suspect_image">Suspect Image</label>
+                                                <input type="file" class="form-control-file" id="suspect_image" name="suspect_image">
+                                            </div>
+
+                                            <div class="form-check">
+                                                <label>Gender</label><br/>
+                                                <label class="form-radio-label">
+                                                    <input class="form-radio-input" type="radio" name="gender" value="Male" >
+                                                    <span class="form-radio-sign">Male</span>
+                                                </label>
+                                                <label class="form-radio-label ml-3">
+                                                    <input class="form-radio-input" type="radio" name="gender" value="Female">
+                                                    <span class="form-radio-sign">Female</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="attachment">Attach file</label>
+                                                <input type="file" class="form-control-file" id="attachment" name="attachment">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="comment">Comment on Case</label>
+                                                <textarea class="form-control" id="comment" name="comment" rows="5" required></textarea>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" type="checkbox" value="" required>
+                                                    <span class="form-check-sign">Agree with terms and conditions</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="card-action">
+                                                <button class="btn btn-success" type="submit">Submit</button>
+                                                <button class="btn btn-danger" type="reset">Reset</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="{% static 'assets1/js/core/jquery.3.2.1.min.js' %}"></script>
+        <script src="{% static 'assets1/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js' %}"></script>
+        <script src="{% static 'assets1/js/core/popper.min.js' %}"></script>
+        <script src="{% static 'assets1/js/core/bootstrap.min.js' %}"></script>
+        <script src="{% static 'assets1/js/plugin/chartist/chartist.min.js' %}"></script>
+        <script src="{% static 'assets1/js/plugin/chartist/plugin/chartist-plugin-tooltip.min.js' %}"></script>
+        <script src="{% static 'assets1/js/plugin/bootstrap-notify/bootstrap-notify.min.js' %}"></script>
+        <script src="{% static 'assets1/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js' %}"></script>
+        <script src="{% static 'assets1/js/plugin/jquery-mapael/jquery.mapael.min.js' %}"></script>
+        <script src="{% static 'assets1/js/plugin/jquery-mapael/maps/world_countries.min.js' %}"></script>
+        <script src="{% static 'assets1/js/plugin/chart-circle/circles.min.js' %}"></script>
+        <script src="{% static 'assets1/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js' %}"></script>
+        <script src="{% static 'assets1/js/ready.min.js' %}"></script>
+
+</html>

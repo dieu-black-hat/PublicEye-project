@@ -1,0 +1,255 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>About</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+    <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+</head>
+
+<body class="about-page">
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <h1 class="sitename">PublicEye</h1>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="" class="active">Home<br></a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/services/">Services</a></li>
+
+                    <li><a href="/mwanted/" class="active">Most Wanted</a></li>
+                    <li><a href="/report_crime/" class="active">Report Crime</a></li>
+                    <li>
+                        <a href="/feedback/" class="active">Give Feedback</a>
+                    </li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <a class="btn-getstarted" href="get-a-quote.html"></a>
+
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- Page Title -->
+        <div class="page-title dark-background" data-aos="fade" style="background-image: url('{% static 'assets/img/page-title-bg.jpg' %}');">
+            <div class="container position-relative">
+                <h1>About</h1>
+                <p>Public Eye envisions a safer community where every citizen can report crimes easily and anonymously. By empowering individuals and fostering collaboration with law enforcement, we aim to create a more transparent and responsive justice
+                    system for all.</p>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="current">About</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- End Page Title -->
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-6 position-relative align-self-start order-lg-last order-first" data-aos="fade-up" data-aos-delay="200">
+                        <img src="{% static 'assets/img/about.jpg' %}" class="img-fluid" alt="">
+                        <a href="https://www.youtube.com/watch?v=NWyA1zUj3Bo" class="glightbox pulsating-play-btn"></a>
+                    </div>
+
+                    <div class="col-lg-6 content order-last order-lg-first" data-aos="fade-up" data-aos-delay="100">
+                        <h3>About Us</h3>
+                        <p>
+                            Public Eye is a dedicated team of professionals, including law enforcement experts, community advocates, and technology developers. We are passionate about leveraging technology to bridge the gap between the public and police, ensuring that every voice
+                            is heard and every report is taken seriously.
+                        </p>
+                        <ul>
+                            <li>
+                                <i class="bi bi-diagram-3"></i>
+                                <div>
+                                    <h5>What We Do</h5>
+                                    <p>We provide an online platform where individuals can report crimes anonymously, track the progress of their cases, and access important safety information. Our system directs reports to the appropriate authorities, facilitating
+                                        swift action and response.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="bi bi-fullscreen-exit"></i>
+                                <div>
+                                    <h5>Our Vision</h5>
+                                    <p>We envision a future where communities are united in the fight against crime, where transparency and collaboration between citizens and law enforcement lead to safer neighborhoods for all.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="bi bi-broadcast"></i>
+                                <div>
+                                    <h5>Get Involved</h5>
+                                    <p>Join us in making a difference! Whether you're a concerned citizen, community leader, or law enforcement officer, your involvement is crucial. Together, we can create a safer world.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /About Section -->
+
+        <!-- Stats Section -->
+        <section id="stats" class="stats section">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Clients</p>
+                        </div>
+                    </div>
+                    <!-- End Stats Item -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Projects</p>
+                        </div>
+                    </div>
+                    <!-- End Stats Item -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Hours Of Support</p>
+                        </div>
+                    </div>
+                    <!-- End Stats Item -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Workers</p>
+                        </div>
+                    </div>
+                    <!-- End Stats Item -->
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /Stats Section -->
+
+        <footer id="footer " class="footer dark-background ">
+
+            <div class="container footer-top ">
+                <div class="row gy-4 ">
+                    <div class="col-lg-5 col-md-12 footer-about ">
+                        <a href="index.html " class="logo d-flex align-items-center ">
+                            <span class="sitename ">PublicEye</span>
+                        </a>
+                        <p>Public Eye envisions a safer community where every citizen can report crimes easily and anonymously. By empowering individuals and fostering collaboration with law enforcement, we aim to create a more transparent and responsive
+                            justice system for all.</p>
+                        <div class="social-links d-flex mt-4 ">
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-6 footer-links ">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Terms of service</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-6 footer-links ">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><a href="#">......</a></li>
+                            <li><a href="#">.......</a></li>
+                            <li><a href="#">.......</a></li>
+                            <li><a href="#">........</a></li>
+                            <li><a href="#">........</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start ">
+                        <h4>Contact Us</h4>
+                        <p>Kigali-Rwanda</p>
+                        <p>Kigali-Rwanda-Gako</p>
+                        <p>Rwanda</p>
+                        <p class="mt-4"><strong>Phone:</strong> <span>+2507862969696</span></p>
+                        <p><strong>Email:</strong> <span>dieutheblackhat@gmail.com</span></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container copyright text-center mt-4 ">
+                <p>© <span>Copyright</span> <strong class="px-1 sitename ">PublicEye</strong> <span>All Rights Reserved</span></p>
+                <div class="credits ">
+                    Designed by <a href="https://bootstrapmade.com/">dieutheblackhat-Fullstack</a>
+                </div>
+            </div>
+
+        </footer>
+
+        <!-- Scroll Top -->
+        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+        <!-- Preloader -->
+        <div id="preloader"></div>
+
+        <!-- Vendor JS Files -->
+        <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+        <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+        <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+        <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+        <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+        <!-- Main JS File -->
+        <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
